@@ -96,7 +96,7 @@ to range [0, 1]
 
 Given a data point, we compute the K nearest data points (neighbors) using certain
 distance metric (e.g., Euclidean metric). For classification, we take the majority label
-of neighbors; for regression, we take the mean of the label values.
+of neighbors, for example, 50% while dealing with 2 categories;for regression, we take the mean of the label values.
 
 Note for KNN technically we don't need to train a model, we simply compute during
 inference time. This can be computationally expensive since each of the test example

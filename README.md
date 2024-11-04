@@ -142,7 +142,7 @@ target variables within each region (or target subsets) are as homogeneous as po
 metrics: gini impurity or information gain, won't matter much in practice.
 * Advantage: simply to understand & interpret, mirrors human decision making
 * Disadvantage: 
-    - can overfit easily (and generalize poorly)if we don't limit the depth of the tree
+    - can overfit easily (and generalize poorly) if we don't limit the depth of the tree
     - can be non-robust: A small change in the training data can lead to a totally different tree
     - instability: sensitive to training set rotation due to its orthogonal decision boundaries
     - <img width="472" alt="image" src="https://github.com/user-attachments/assets/8de8139f-9510-4236-9817-475e2890973e">
@@ -193,7 +193,11 @@ I wrote a [notebook](notebooks/bag-rf-var.ipynb) to illustrate this point.
 
 In practice, tuning random forest entails having a large number of trees (the more the better, but
 always consider computation constraint). Also, `min_samples_leaf` (The minimum number of
-samples at the leaf node)to control the tree size and overfitting. Always CV the parameters. 
+samples at the leaf node) to control the tree size and overfitting. Always CV the parameters. 
+
+Cross Validation:
+<img width="521" alt="image" src="https://github.com/user-attachments/assets/fadc668c-3b35-4d49-aead-83aaaa270a53">
+
 
 **Feature importance**
 

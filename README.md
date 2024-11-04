@@ -163,7 +163,7 @@ Here is a [great illustration](http://scikit-learn.org/stable/auto_examples/ense
 
 ![bagging](http://scikit-learn.org/stable/_images/sphx_glr_plot_bias_variance_001.png)
 
-* Bagging is when samlping is performed *with* replacement. When sampling is performed *without* replacement, it's called pasting.
+* Bagging is when sampling is performed *with* replacement. When sampling is performed *without* replacement, it's called pasting.
 * Bagging is popular due to its boost for performance, but also due to that individual learners can be trained in parallel and scale well
 * Ensemble methods work best when the learners are as independent from one another as possible
 * Voting: soft voting (predict probability and average over all individual learners) often works better than hard voting

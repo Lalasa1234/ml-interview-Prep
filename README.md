@@ -259,6 +259,7 @@ A feedforward neural network where we have multiple layers. In each layer we
 can have multiple neurons, and each of the neuron in the next layer is a linear/nonlinear
 combination of the all the neurons in the previous layer. In order to train the network
 we back propagate the errors layer by layer. In theory MLP can approximate any functions.
+* HP: The iteration count is equal to the number of batches in an epoch, and it is calculated by dividing the total number of samples in the training dataset by the batch size.
 
 ![mlp](http://neuroph.sourceforge.net/tutorials/images/MLP.jpg)
 

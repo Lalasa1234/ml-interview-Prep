@@ -194,8 +194,13 @@ I wrote a [notebook](notebooks/bag-rf-var.ipynb) to illustrate this point.
 In practice, tuning random forest entails having a large number of trees (the more the better, but
 always consider computation constraint). Also, `min_samples_leaf` (The minimum number of
 samples at the leaf node) to control the tree size and overfitting. Always CV the parameters. 
+Other Hyperparameters to tune:
+* bootstrap = method for sampling data points with (True) or without replacement (False)
+* min_samples_split = min number of data points placed in a node before the node is split
+* max_features = max number of features considered for splitting a node
 
 Cross Validation:
+
 <img width="521" alt="image" src="https://github.com/user-attachments/assets/fadc668c-3b35-4d49-aead-83aaaa270a53">
 
 
@@ -231,8 +236,9 @@ focus more on examples that previous weak learners misclassified.
 
 
 > XGBoost uses a more regularized model formalization to control overfitting, which gives it better performance
-
+> This is possible by not having a very high learning rate, having a good Subsample ratio where XGBoost would randomly sample half of the training data prior to growing trees, lambda (L2), alpha (L1)
 [back to top](#machine-learning)
+
 
 
 ### Stacking

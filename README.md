@@ -144,6 +144,9 @@ metrics: gini impurity or information gain, won't matter much in practice.
     - can overfit easily (and generalize poorly)if we don't limit the depth of the tree
     - can be non-robust: A small change in the training data can lead to a totally different tree
     - instability: sensitive to training set rotation due to its orthogonal decision boundaries
+    - <img width="472" alt="image" src="https://github.com/user-attachments/assets/8de8139f-9510-4236-9817-475e2890973e">
+    On the left, a Decision Tree can split it easily, while on the right, after the dataset is rotated by 45°, the decision boundary looks unnecessarily folded.
+
 
 ![decision tree](http://www.fizyka.umk.pl/~wduch/ref/kdd-tut/d-tree-iris.gif)
 

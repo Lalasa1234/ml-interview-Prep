@@ -71,8 +71,8 @@ of the deep learning book, which covers machine learning basics.
 * how to learn the parameter: minimize the cost function
 * how to minimize cost function: gradient descent
 * regularization: 
-    - L1 (lasso): can shrink certain coef to zero, thus performing feature selection
-    - L2 (ridge): shrink all coef with the same proportion; almost always outperforms L1
+    - L1 (lasso): can shrink certain coef to zero, thus performing feature selection, where we can drop any variables associated with coefficients that go to zero.
+    - L2 (ridge): shrink all coef with the same proportion; almost always outperforms L1; is useful when you have collinear/codependent features.
     - combined (Elastic Net): 
 * assumes linear relationship between features and the label
 * can add polynomial and interaction features to add non-linearity
@@ -89,6 +89,7 @@ of the deep learning book, which covers machine learning basics.
 to range [0, 1] 
 * Threshold to make prediction: if the output > .5, prediction 1; otherwise prediction 0
 * a special case of softmax function, which deals with multi-class problem
+* Hyperparameters: penalty in [‘none’, ‘l1’, ‘l2’
 
 [back to top](#machine-learning)
 

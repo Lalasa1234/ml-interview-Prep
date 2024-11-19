@@ -99,7 +99,7 @@ Given a data point, we compute the K nearest data points (neighbors) using certa
 distance metric (e.g., Euclidean metric). For classification, we take the majority label
 of neighbors, for example, 50% while dealing with 2 categories;for regression, we take the mean of the label values.
 
-Note for KNN technically we don't need to train a model, we simply compute during
+KNN is not a discriminative model. It is called lazy as it doesn't actually learn the train data, but uses it for during
 inference time. This can be computationally expensive since each of the test example
 need to be compared with every training example to see how close they are.
 

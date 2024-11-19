@@ -89,7 +89,7 @@ of the deep learning book, which covers machine learning basics.
 to range [0, 1] 
 * Threshold to make prediction: if the output > .5, prediction 1; otherwise prediction 0
 * a special case of softmax function, which deals with multi-class problem
-* Hyperparameters: penalty in [‘none’, ‘l1’, ‘l2’
+* Hyperparameters: penalty in [‘none’, ‘l1’, ‘l2’]
 
 [back to top](#machine-learning)
 

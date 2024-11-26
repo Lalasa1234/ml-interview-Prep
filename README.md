@@ -117,9 +117,8 @@ when K equals number of data points or other large number the model is prone to 
 ### SVM
 
 * can perform linear, nonlinear, or outlier detection (unsupervised)
-* large margin classifier: Margin is the distance between the boundary and closest data points from every class. SVM not only creates a decision boundary, but also maxmizes the margin
-* the closest training examples are called the support vectors, since they are the points
-based on which the decision boundary is drawn
+* large margin classifier: Margin is the distance between the boundary and closest data points from every class. SVM not only creates a decision boundary, but also maxmizes the margin. As SVM doesn't predict based on training data points, but based on the boundary and margin, it isn't getting overfitted to train data
+* the closest training examples are called the support vectors, since they are the points based on which the decision boundary is drawn
 * SVMs are sensitive to feature scaling
 
 ![svm](https://qph.ec.quoracdn.net/main-qimg-675fedee717331e478ecfcc40e2e4d38)
